@@ -1,0 +1,120 @@
+using System;
+
+namespace atvBio
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            telaInicial();
+            Console.ReadKey();
+        }
+
+        static void telaInicial()
+        {
+            Console.WriteLine("\n+============================================+"
+                            + "\n|                                            |"
+                            + "\n|                  BIOLOGIA                  |"
+                            + "\n|                                            |"
+                            + "\n+============================================+"
+                            + "\n|                                            |"
+                            + "\n|   Desenvolvido por: Anne Cordeiro, Bruna   |"
+                            + "\n|   Arruda, Érica Cristina, Jamile Ribeiro   |"
+                            + "\n|   e Jamile França (3º ano 1)               |"
+                            + "\n|                                            |"
+                            + "\n+============================================+"
+                            + "\n|                                            |"
+                            + "\n|   Clique qualquer tecla para continuar.    |"
+                            + "\n|                                            |"
+                            + "\n+============================================+");
+
+            Console.ReadKey();
+            instrucoes();
+        }
+
+        static void instrucoes()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+============================================+"
+                            + "\n|                                            |"
+                            + "\n|                 INSTRUÇÕES                 |"
+                            + "\n|                                            |"
+                            + "\n+============================================+"
+                            + "\n|                                            |"
+                            + "\n|   Esse                                     |"
+                            + "\n|                                            |"
+                            + "\n|                                            |"
+                            + "\n|                                            |"
+                            + "\n+============================================+"
+                            + "\n|                                            |"
+                            + "\n|   Clique qualquer tecla para continuar.    |"
+                            + "\n|                                            |"
+                            + "\n+============================================+");
+
+            Console.ReadKey();
+            niveis();
+        }
+
+        static void niveis()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+==================================+"
+                            + "\n|                                  |"
+                            + "\n|              NÍVEIS              |"
+                            + "\n|                                  |"
+                            + "\n+==================================+"
+                            + "\n|                                  |"
+                            + "\n|   1. NÍVEL BÁSICO                |"
+                            + "\n|   2. NÍVEL INTERMEDIÁRIO         |"
+                            + "\n|   3. NÍVEL AVANÇADO              |"
+                            + "\n|                                  |"
+                            + "\n+==================================+");
+
+            int nivel;
+            nivel = int.Parse(Console.ReadLine());
+
+            switch (nivel)
+            {
+                case 1:
+                    Console.Clear();
+                    basic();
+                    break;
+
+                case 2:
+                    Console.Clear();
+                    //intermed();
+                    break;
+
+                case 3:
+                    Console.Clear();
+                    //avanc();
+                    break;    
+            }
+
+        }
+        static void basic()
+        {
+            Console.WriteLine("\n+======================================================+"
+                            + "\n|                                                      |"
+                            + "\n|                      NÍVEL BÁSICO                    |"
+                            + "\n|                                                      |"
+                            + "\n+======================================================+"
+                            + "\n|                                                      |"
+                            + "\n|   1 - (UDESC, 2008) Escolha  a alternativa           |"
+                            + "\n|   correta sobre os ácidos nucléicos:                 |"
+                            + "\n|                                                      |"
+                            + "\n|    a) O DNA e o RNA são idênticos em cons-           |"
+                            + "\n|   tituição e diferentes em forma molecular           |"
+                            + "\n|                                                      |"
+                            + "\n|    b) O RNA é constituído pelas bases pú-            |"
+                            + "\n|   ricas adenina e guanina, e pirimídicas             |"
+                            + "\n|   uracila e timina                                   |"
+                            + "\n|                                                      |"
+                            + "\n|    c) O DNA é constituído pelas bases pú-            |"
+                            + "\n|   ricas adenina e timina, e pirimídicas              |"
+                            + "\n|   citosina e guanina                                 |"
+                            + "\n|                                                      |"
+                            + "\n+======================================================+");
+        }
+    }
+}
