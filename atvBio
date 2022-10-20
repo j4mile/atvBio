@@ -9,52 +9,54 @@ namespace atvBio
             telaInicial();
             Console.ReadKey();
         }
-
         static void telaInicial()
         {
-            Console.WriteLine("\n+============================================+"
-                            + "\n|                                            |"
-                            + "\n|                  BIOLOGIA                  |"
-                            + "\n|                                            |"
-                            + "\n+============================================+"
-                            + "\n|                                            |"
-                            + "\n|   Desenvolvido por: Anne Cordeiro, Bruna   |"
-                            + "\n|   Arruda, Érica Cristina, Jamile Ribeiro   |"
-                            + "\n|   e Jamile França (3º ano 1)               |"
-                            + "\n|                                            |"
-                            + "\n+============================================+"
-                            + "\n|                                            |"
-                            + "\n|   Clique qualquer tecla para continuar.    |"
-                            + "\n|                                            |"
-                            + "\n+============================================+");
+            Console.Clear();
+            Console.WriteLine("\n+===============================================+"
+                            + "\n|                                               |"
+                            + "\n|                    BIOLOGIA                   |"
+                            + "\n|                                               |"
+                            + "\n+-----------------------------------------------+"
+                            + "\n|                                               |"
+                            + "\n|    Desenvolvido por: Anne Cordeiro, Bruna     |"
+                            + "\n|    Arruda, Érica Cristina, Jamile Ribeiro     |"
+                            + "\n|    e Jamile França (3º ano 1)                 |"
+                            + "\n|                                               |"
+                            + "\n+-----------------------------------------------+"
+                            + "\n|                                               |"
+                            + "\n|    Pressione qualquer tecla para continuar    |"
+                            + "\n|                                               |"
+                            + "\n+===============================================+");
 
             Console.ReadKey();
             instrucoes();
         }
-
         static void instrucoes()
         {
             Console.Clear();
-            Console.WriteLine("\n+============================================+"
-                            + "\n|                                            |"
-                            + "\n|                 INSTRUÇÕES                 |"
-                            + "\n|                                            |"
-                            + "\n+============================================+"
-                            + "\n|                                            |"
-                            + "\n|   Esse                                     |"
-                            + "\n|                                            |"
-                            + "\n|                                            |"
-                            + "\n|                                            |"
-                            + "\n+============================================+"
-                            + "\n|                                            |"
-                            + "\n|   Clique qualquer tecla para continuar.    |"
-                            + "\n|                                            |"
-                            + "\n+============================================+");
+            Console.WriteLine("\n+============================================================+"
+                            + "\n|                                                            |"
+                            + "\n|                         INSTRUÇÕES                         |"
+                            + "\n|                                                            |"
+                            + "\n+------------------------------------------------------------+"
+                            + "\n|                                                            |"
+                            + "\n|   BEM-VINDO! Esse é um mini-game de biologia, dividido     |"
+                            + "\n|   em três níveis diferentes (básico, intermediário e a-    |"
+                            + "\n|   vançado). Cada nível corresponde a uma fase do ensino    |"
+                            + "\n|   médio (primeiro, segundo e terceiro) e possui 5 ques-    |"
+                            + "\n|   tões. As questões são baseadas em conteúdos da ementa    |"
+                            + "\n|   de cada ano e foram previamente corrigidas por uma       |"
+                            + "\n|   professora da área.                                      |"
+                            + "\n|                                                            |"
+                            + "\n+------------------------------------------------------------+"
+                            + "\n|                                                            |"
+                            + "\n|         Pressione qualquer tecla para continuar...         |"
+                            + "\n|                                                            |"
+                            + "\n+============================================================+");
 
             Console.ReadKey();
-            niveis();
+            comoJogar();
         }
-
         static void niveis()
         {
             Console.Clear();
@@ -62,7 +64,7 @@ namespace atvBio
                             + "\n|                                  |"
                             + "\n|              NÍVEIS              |"
                             + "\n|                                  |"
-                            + "\n+==================================+"
+                            + "\n+----------------------------------+"
                             + "\n|                                  |"
                             + "\n|   1. NÍVEL BÁSICO                |"
                             + "\n|   2. NÍVEL INTERMEDIÁRIO         |"
@@ -77,44 +79,621 @@ namespace atvBio
             {
                 case 1:
                     Console.Clear();
-                    basic();
+                    basic1();
                     break;
 
                 case 2:
                     Console.Clear();
-                    //intermed();
+                    intermed1();
                     break;
 
                 case 3:
                     Console.Clear();
-                    //avanc();
-                    break;    
+                    avanc1();
+                    break;
             }
 
         }
-        static void basic()
+        static void basic1()
         {
-            Console.WriteLine("\n+======================================================+"
-                            + "\n|                                                      |"
-                            + "\n|                      NÍVEL BÁSICO                    |"
-                            + "\n|                                                      |"
-                            + "\n+======================================================+"
-                            + "\n|                                                      |"
-                            + "\n|   1 - (UDESC, 2008) Escolha  a alternativa           |"
-                            + "\n|   correta sobre os ácidos nucléicos:                 |"
-                            + "\n|                                                      |"
-                            + "\n|    a) O DNA e o RNA são idênticos em cons-           |"
-                            + "\n|   tituição e diferentes em forma molecular           |"
-                            + "\n|                                                      |"
-                            + "\n|    b) O RNA é constituído pelas bases pú-            |"
-                            + "\n|   ricas adenina e guanina, e pirimídicas             |"
-                            + "\n|   uracila e timina                                   |"
-                            + "\n|                                                      |"
-                            + "\n|    c) O DNA é constituído pelas bases pú-            |"
-                            + "\n|   ricas adenina e timina, e pirimídicas              |"
-                            + "\n|   citosina e guanina                                 |"
-                            + "\n|                                                      |"
-                            + "\n+======================================================+");
+            Console.WriteLine("\n+==============================================================+"
+                            + "\n|                                                              |"
+                            + "\n|                        NÍVEL BÁSICO                          |"
+                            + "\n|                                                              |"
+                            + "\n+--------------------------------------------------------------+"
+                            + "\n|                                                              |"
+                            + "\n|  1 - (UDESC, 2008) Escolha  a alternativa correta sobre os   |"
+                            + "\n|  ácidos nucléicos:                                           |"
+                            + "\n|                                                              |"
+                            + "\n|    a) O DNA e o RNA são idênticos em constituição e dife-    |"
+                            + "\n|    rentes em forma molecular                                 |"
+                            + "\n|                                                              |"
+                            + "\n|    b) O RNA é constituído pelas bases púricas adenina e      |"
+                            + "\n|    guanina, e pirimídicas uracila e timina                   |"
+                            + "\n|                                                              |"
+                            + "\n|    c) O DNA é constituído pelas bases púricas adenina e      |"
+                            + "\n|    nina e timina, e pirimídicas citosina e guanina           |"
+                            + "\n|                                                              |"
+                            + "\n|    d) O DNA é constituído pelas bases púricas adenina e      |"
+                            + "\n|    guanina, e pirimídicas citosina e timina                  |"
+                            + "\n|                                                              |"
+                            + "\n|    e) O RNA é constituído pelas bases púricas adenina e      |"
+                            + "\n|    timina, e pirimídicas citosina e uracila                  |"
+                            + "\n|                                                              |"
+                            + "\n+==============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                basic2();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
         }
-    }
+        static void basic2()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+==============================================================+"
+                            + "\n|                                                              |"
+                            + "\n|                        NÍVEL BÁSICO                          |"
+                            + "\n|                                                              |"
+                            + "\n+--------------------------------------------------------------+"
+                            + "\n|                                                              |"
+                            + "\n|  2 - (UDESC, 2016) Analise as afirmações, em relação aos     |"
+                            + "\n|  ácidos nucléicos, e confira as verdadeiras ou falsas:       |"
+                            + "\n|                                                              |"
+                            + "\n|    I. Os ácidos nucleicos são moléculas gigantes formadas    |"
+                            + "\n|    por unidades chamadas de nucleotídeos                     |"
+                            + "\n|                                                              |"
+                            + "\n|    II. O RNA transportador é formado a partir de regiões     |"
+                            + "\n|    específicas do DNA                                        |"
+                            + "\n|                                                              |"
+                            + "\n|    III. O RNA ribossômico associado com proteínas forma os   |"
+                            + "\n|    ribossomos                                                |"
+                            + "\n|                                                              |"
+                            + "\n|    IV. O DNA apresenta - se altamente condensado nas célu-   |"
+                            + "\n|    las procarióticas                                         |"
+                            + "\n|                                                              |"
+                            + "\n|   Agora, escolha a alternativa que apresente a sequência     |"
+                            + "\n|  correta, sendo F para FALSO e V para VERDADEIRO:            |"
+                            + "\n|                                                              |"
+                            + "\n|    a) F - V - V - F                                          |"
+                            + "\n|                                                              |"
+                            + "\n|    b) F - F - V - V                                          |"
+                            + "\n|                                                              |"
+                            + "\n|    c) V - V - V - F                                          |"
+                            + "\n|                                                              |"
+                            + "\n|    d) V - F - F - V                                          |"
+                            + "\n|                                                              |"
+                            + "\n+==============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                basic3();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void basic3()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+==============================================================+"
+                            + "\n|                                                              |"
+                            + "\n|                        NÍVEL BÁSICO                          |"
+                            + "\n|                                                              |"
+                            + "\n+--------------------------------------------------------------+"
+                            + "\n|                                                              |"
+                            + "\n|  3 - No refeitório de uma indústria, na hora do almoço, um   |"
+                            + "\n|  funcionário alimentou-se apenas com um bife grelhado e u-   |"
+                            + "\n|  ma salada com alface e tomate.                              |"
+                            + "\n|      É possível afirmar que a dieta desse funcionário é:     |"
+                            + "\n|                                                              |"
+                            + "\n|    a) rica em carboidratos e pobre em proteínas              |"
+                            + "\n|                                                              |"
+                            + "\n|    b) pobre em vitaminas e rica em lipídios                  |"
+                            + "\n|                                                              |"
+                            + "\n|    c) rica em proteínas e pobre em carboidratos              |"
+                            + "\n|                                                              |"
+                            + "\n|    d) rica em carboidratos e em proteínas                    |"
+                            + "\n|                                                              |"
+                            + "\n+==============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                basic4();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void basic4()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+==============================================================+"
+                            + "\n|                                                              |"
+                            + "\n|                        NÍVEL BÁSICO                          |"
+                            + "\n|                                                              |"
+                            + "\n+--------------------------------------------------------------+"
+                            + "\n|                                                              |"
+                            + "\n|  4 - Os ácidos nucleicos compreendem o DNA e o RNA, também   |"
+                            + "\n|  conhecidos como as moléculas da vida. Sobre essas duas im-  |"
+                            + "\n|  portantíssimas estruturas presentes em todo e qualquer ser  |"
+                            + "\n|  vivo, escolha a alternativa correta:                        |"
+                            + "\n|                                                              |"
+                            + "\n|    a) O DNA é formado por uma fita única e difere RNA, que   |"
+                            + "\n|    é formado por uma fita dupla                              |"
+                            + "\n|                                                              |"
+                            + "\n|    b)  O RNA está presente em todos os seres vivos enquanto  |"
+                            + "\n|    o DNA é verificado apenas nos seres vivos superiores,     |"
+                            + "\n|    como, por exemplo, os primatas                            |"
+                            + "\n|                                                              |"
+                            + "\n|    c) O DNA é formado por uma fita dupla que contém os ge-   |"
+                            + "\n|    nes com as informações genéticas do organismo             |"
+                            + "\n|                                                              |"
+                            + "\n|    d) O RNA origina o DNA que, ao longo da vida, se repli-   |"
+                            + "\n|    cará inúmeras vezes                                       |"
+                            + "\n|                                                              |"
+                            + "\n+==============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                basic5();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void basic5()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                          NÍVEL BÁSICO                         |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  5 - (CEMASC, 2019) Recentemente, cientistas construíram uma  |"
+                            + "\n|  molécula de ácidos nucleicos formada por oito nucleotídeos   |"
+                            + "\n|  que apresentavam as quatro bases nitrogenadas tradicionais   |"
+                            + "\n|  (Adenina, Timina, Citosina e Guanina) e quatro novas bases   |"
+                            + "\n|  (Z, P, S e B). Existe uma relação química e funcional das    |"
+                            + "\n|  bases tradicionais já conhecidas com as novas bases, como    |"
+                            + "\n|  descrita a seguir:                                           |"
+                            + "\n|                                                               |"
+                            + "\n|   B -> Adenina | S -> Timina | P -> Guanina | Z -> Citosina   |"
+                            + "\n|                                                               |"
+                            + "\n|   a) O DNA é formado por uma fita única e difere RNA, que é   |"
+                            + "\n|   formado por uma fita dupla                                  |"
+                            + "\n|                                                               |"
+                            + "\n|   b)  O RNA está presente em todos os seres vivos enquanto o  |"
+                            + "\n|   DNA é verificado apenas nos seres vivos superiores, como    |"
+                            + "\n|   por exemplo, os primatas                                    |"
+                            + "\n|                                                               |"
+                            + "\n|   c) O DNA é formado por uma fita dupla que contém os genes   |"
+                            + "\n|   nes com as informações genéticas do organismo               |"
+                            + "\n|                                                               |"
+                            + "\n|   d) O RNA origina o DNA que, ao longo da vida, se replica-   |"
+                            + "\n|   rá inúmeras vezes                                           |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                intermed1();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void intermed1()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                      NÍVEL INTERMEdIÁRIO                      |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  1 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                intermed2();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void intermed2()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                      NÍVEL INTERMEdIÁRIO                      |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  2 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                intermed3();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void intermed3()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                      NÍVEL INTERMEdIÁRIO                      |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  3 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                intermed4();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void intermed4()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                      NÍVEL INTERMEdIÁRIO                      |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  4 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                intermed5();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void intermed5()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                      NÍVEL INTERMEdIÁRIO                      |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  5 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                avanc1();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void avanc1()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                         NÍVEL AVANÇADO                        |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  1 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                avanc2();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void avanc2()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                         NÍVEL AVANÇADO                        |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  2 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                avanc3();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void avanc3()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                         NÍVEL AVANÇADO                        |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  3 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                avanc4();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void avanc4()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                         NÍVEL AVANÇADO                        |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  4 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                correto();
+                Console.ReadKey();
+                avanc5();
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void avanc5()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================================+"
+                            + "\n|                                                               |"
+                            + "\n|                         NÍVEL AVANÇADO                        |"
+                            + "\n|                                                               |"
+                            + "\n+---------------------------------------------------------------+"
+                            + "\n|                                                               |"
+                            + "\n|  5 -                                                          |"
+                            + "\n|                                                               |"
+                            + "\n+===============================================================+");
+
+            string resp, escolha;
+            resp = "a";
+            escolha = Console.ReadLine();
+
+            if (escolha == resp)
+            {
+                Console.Clear();
+                Console.WriteLine("\n+============================================+"
+                                + "\n|                                            |"
+                                + "\n|                   CORRETO!                 |"
+                                + "\n|                                            |"
+                                + "\n+--------------------------------------------+"
+                                + "\n|                                            |"
+                                + "\n|   Parabéns! Jogo concluído com sucesso.    |"
+                                + "\n|                                            |"
+                                + "\n|   Pressione qualquer tecla para sair.      |"
+                                + "\n|                                            |"
+                                + "\n+============================================+");
+            }
+            else
+            {
+                gameover();
+                Console.ReadKey();
+                niveis();
+            }
+        }
+        static void correto()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================+"
+                            + "\n|                                               |"
+                            + "\n|                    CORRETO!                   |"
+                            + "\n|                                               |"
+                            + "\n+-----------------------------------------------+"
+                            + "\n|                                               |"
+                            + "\n|   Pressione qualquer tecla para continuar     |"
+                            + "\n|                                               |"
+                            + "\n+===============================================+");
+        }
+        static void gameover()
+        {
+            Console.Clear();
+            Console.WriteLine("\n+===============================================+"
+                            + "\n|                                               |"
+                            + "\n|                   GAME OVER!                  |"
+                            + "\n|                                               |"
+                            + "\n+-----------------------------------------------+"
+                            + "\n|                                               |"
+                            + "\n|    Pressione qualquer tecla para continuar    |"
+                            + "\n|                                               |"
+                            + "\n+===============================================+");
+        }
+      static void comoJogar(){
+        Console.Clear();
+        Console.WriteLine(    "\n+============================================================+"
+                            + "\n|                                                            |"
+                            + "\n|                         INSTRUÇÕES                         |"
+                            + "\n|                                                            |"
+                            + "\n+------------------------------------------------------------+"
+                            + "\n|                                                            |"
+                            + "\n|   COMO JOGAR? Primeiramente, você irá escolher o nível     |"
+                            + "\n|   que deseja iniciar. Após o término de cada nível, você   |"
+                            + "\n|   seguirá para o próximo.                                  |"
+                            + "\n|                                                            |"
+                            + "\n|   Todas as questões são objetivas, com 5 alternativas,     |"
+                            + "\n|   de A à E. Apenas uma delas é correta.                    |"
+                            + "\n|                                                            |"
+                            + "\n|   Você irá analisar cada alternativa e inserir a letra     |"
+                            + "\n|   correspondente à alternativa escolhida. Se acertado,     |"
+                            + "\n|   seguirá para a próxima pergunta. Em caso de erro, seu    |"
+                            + "\n|   progresso será resetado e você retornará para a tela     |"
+                            + "\n|   de níveis.                                               |"
+                            + "\n|                                                            |"
+                            + "\n+------------------------------------------------------------+"
+                            + "\n|                                                            |"
+                            + "\n|         Pressione qualquer tecla para continuar...         |"
+                            + "\n|                                                            |"
+                            + "\n+============================================================+");
+        Console.ReadKey();
+        niveis();
+      }
+   }
 }
