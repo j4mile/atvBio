@@ -9,28 +9,34 @@ namespace atvBio
             telaInicial();
             Console.ReadKey();
         }
+
         static void telaInicial()
         {
             Console.Clear();
-            Console.WriteLine("\n+===============================================+"
-                            + "\n|                                               |"
-                            + "\n|                    BIOLOGIA                   |"
-                            + "\n|                                               |"
-                            + "\n+-----------------------------------------------+"
-                            + "\n|                                               |"
-                            + "\n|    Desenvolvido por: Anne Cordeiro, Bruna     |"
-                            + "\n|    Arruda, Érica Cristina, Jamile Ribeiro     |"
-                            + "\n|    e Jamile França (3º ano 1)                 |"
-                            + "\n|                                               |"
-                            + "\n+-----------------------------------------------+"
-                            + "\n|                                               |"
-                            + "\n|    Pressione qualquer tecla para continuar    |"
-                            + "\n|                                               |"
-                            + "\n+===============================================+");
-
+            Console.WriteLine("\n+==================================================+"
+                            + "\n|                                                  |"
+                            + "\n|                      BIOLOGIA                    |"
+                            + "\n|                                                  |"
+                            + "\n+--------------------------------------------------+"
+                            + "\n|                                                  |"
+                            + "\n|   Desenvolvido por:                              |"
+                            + "\n|                                                  |"
+                            + "\n|   Anne Cordeiro, Bruna Arruda, Érica Cristina,   |"
+                            + "\n|   Jamile Ribeiro e Jamile França (3º ano 1)      |"
+                            + "\n|                                                  |"
+                            + "\n|   Corrigido por:                                 |"
+                            + "\n|                                                  |"
+                            + "\n|   Professora Cíntia Jardim (biologia)            |"
+                            + "\n|                                                  |"
+                            + "\n+--------------------------------------------------+"
+                            + "\n|                                                  |"
+                            + "\n|    Pressione qualquer tecla para continuar...    |"
+                            + "\n|                                                  |"
+                            + "\n+==================================================+");
             Console.ReadKey();
             instrucoes();
         }
+
         static void instrucoes()
         {
             Console.Clear();
@@ -53,16 +59,17 @@ namespace atvBio
                             + "\n|         Pressione qualquer tecla para continuar...         |"
                             + "\n|                                                            |"
                             + "\n+============================================================+");
-
             Console.ReadKey();
+            niveis();
             comoJogar();
         }
+
         static void niveis()
         {
             Console.Clear();
             Console.WriteLine("\n+==================================+"
                             + "\n|                                  |"
-                            + "\n|              NÍVEIS              |"
+                            + "\n|               NÍVEIS             |"
                             + "\n|                                  |"
                             + "\n+----------------------------------+"
                             + "\n|                                  |"
@@ -71,24 +78,52 @@ namespace atvBio
                             + "\n|   3. NÍVEL AVANÇADO              |"
                             + "\n|                                  |"
                             + "\n+==================================+");
-
             int nivel;
             nivel = int.Parse(Console.ReadLine());
-
             switch (nivel)
             {
                 case 1:
                     Console.Clear();
+                    basic();
                     basic1();
                     break;
 
                 case 2:
                     Console.Clear();
+                    //intermed();
                     intermed1();
                     break;
 
                 case 3:
                     Console.Clear();
+                    //avanc();
+                    break;    
+            }
+
+        }
+        static void basic()
+        {
+            Console.WriteLine("\n+======================================================+"
+                            + "\n|                                                      |"
+                            + "\n|                      NÍVEL BÁSICO                    |"
+                            + "\n|                                                      |"
+                            + "\n+------------------------------------------------------+"
+                            + "\n|                                                      |"
+                            + "\n|  1 - (UDESC, 2008) Escolha  a alternativa correta    |"
+                            + "\n|  sobre os ácidos nucléicos:                          |"
+                            + "\n|                                                      |"
+                            + "\n|    a) O DNA e o RNA são idênticos em constituição    |"
+                            + "\n|    e diferentes em forma molecular                   |"
+                            + "\n|                                                      |"
+                            + "\n|    b) O RNA é constituído pelas bases púricas ade-   |"
+                            + "\n|    nina e guanina, e pirimídicas uracila e timina    |"
+                            + "\n|                                                      |"
+                            + "\n|    c) O DNA é constituído pelas bases púricas ade-   |"
+                            + "\n|    nina e timina, e pirimídicas citosina e guanina   |"
+                            + "\n|                                                      |"
+                            + "\n+======================================================+");
+        }
+    }
                     avanc1();
                     break;
             }
@@ -193,6 +228,7 @@ namespace atvBio
                 niveis();
             }
         }
+        
         static void basic3()
         {
             Console.Clear();
@@ -234,6 +270,7 @@ namespace atvBio
                 niveis();
             }
         }
+        
         static void basic4()
         {
             Console.Clear();
@@ -629,7 +666,7 @@ namespace atvBio
                                 + "\n|                                            |"
                                 + "\n|   Parabéns! Jogo concluído com sucesso.    |"
                                 + "\n|                                            |"
-                                + "\n|   Pressione qualquer tecla para sair.      |"
+                                + "\n|   Pressione qualquer tecla para sair       |"
                                 + "\n|                                            |"
                                 + "\n+============================================+");
             }
@@ -643,28 +680,28 @@ namespace atvBio
         static void correto()
         {
             Console.Clear();
-            Console.WriteLine("\n+===============================================+"
-                            + "\n|                                               |"
-                            + "\n|                    CORRETO!                   |"
-                            + "\n|                                               |"
-                            + "\n+-----------------------------------------------+"
-                            + "\n|                                               |"
-                            + "\n|   Pressione qualquer tecla para continuar     |"
-                            + "\n|                                               |"
-                            + "\n+===============================================+");
+            Console.WriteLine("\n+==================================================+"
+                            + "\n|                                                  |"
+                            + "\n|                      CORRETO!                    |"
+                            + "\n|                                                  |"
+                            + "\n+--------------------------------------------------+"
+                            + "\n|                                                  |"
+                            + "\n|    Pressione qualquer tecla para continuar...    |"
+                            + "\n|                                                  |"
+                            + "\n+==================================================+");
         }
         static void gameover()
         {
             Console.Clear();
-            Console.WriteLine("\n+===============================================+"
-                            + "\n|                                               |"
-                            + "\n|                   GAME OVER!                  |"
-                            + "\n|                                               |"
-                            + "\n+-----------------------------------------------+"
-                            + "\n|                                               |"
-                            + "\n|    Pressione qualquer tecla para continuar    |"
-                            + "\n|                                               |"
-                            + "\n+===============================================+");
+            Console.WriteLine("\n+==================================================+"
+                            + "\n|                                                  |"
+                            + "\n|                     GAME OVER!                   |"
+                            + "\n|                                                  |"
+                            + "\n+--------------------------------------------------+"
+                            + "\n|                                                  |"
+                            + "\n|    Pressione qualquer tecla para continuar...    |"
+                            + "\n|                                                  |"
+                            + "\n+==================================================+");
         }
       static void comoJogar(){
         Console.Clear();
